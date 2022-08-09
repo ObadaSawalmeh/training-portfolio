@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    white-space:nowrap;
+}
+body {
+    width: 100vw;
+}
+header {
+    background-color: #0f2557;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 150px;
+}
+
+.logo {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+    margin-right: 5px;
+}
+
+.logo:hover {
+    color: #ffffff;
+    text-shadow: 0px 0px 5px #0f2557;
+    transition: .5s;
+    text-shadow: 10px 5px 25px black;
+}
+
+.navigation a {
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 5px #0f2557;
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.navigation a:hover {
+    color: #ffffff;
+    transition: .5s;
+    text-shadow: 10px 5px 25px black;
+}
+
+header .label {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    margin-left: 84%;
+    padding: 5px;
+    border-radius: 50px;
+    height: 26px;
+    width: 50px;
+}
+
+.fa-moon {
+    color: #0dbf8a;
+}
+
+.fa-sun {
+    color: #f39c12;
+}
+
+.checkbox {
+    opacity: 0;
+    position: fixed;
+    margin-left: 82%;
+}
+
+.checkbox:checked+.label .ball {
+    transform: translateX(24px);
+}
+
+.ball {
+    width: 22px;
+    height: 22px;
+    background-color: #0f2557;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    border-radius: 50%;
+    transition: transform .2s linear;
+}
+
+section {
+    padding: 100px 200px;
+}
+
+.main {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: #0f2557;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.main h2 {
+    color: whitesmoke;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
+.main h2 span {
+    display: inline-block;
+    margin-top: 10px;
+    color: whitesmoke;
+    font-size: 3em;
+    font-weight: 600;
+}
+
+.main h3 {
+    color: whitesmoke;
+    font-size: 1.4em;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.main-btn {
+    color: #0f2557;
+    background-color: whitesmoke;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    border-color: none;
+    border: none;
+    transition-duration: .5s;
+}
+
+.main-btn:hover {
+    background-color: lightgray;
+    transform: scale(1.05);
+    color: #0f2557;
+}
+
+.social-icons a {
+    transition: scale 0.7s;
+    color: whitesmoke;
+    border-color: none;
+    border: none;
+    font-size: 1.7em;
+    padding-right: 30px;
+    border: none;
+}
+
+#linkdin {
+    transition: 0.7s;
+}
+
+#linkdin:hover {
+    transform: scale(1.2);
+    text-shadow: 0px 0px 5px white;
+    color: lightgrey;
+}
+
+#facebook {
+    transition: 0.7s;
+}
+
+#facebook:hover {
+    transform: scale(1.2);
+    text-shadow: 0px 0px 5px white;
+    color: lightgrey;
+}
+
+#instagram {
+    transition: 0.7s;
+}
+
+#instagram:hover {
+    transform: scale(1.2);
+    text-shadow: 0px 0px 5px white;
+    color: lightgrey;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: #0f2557;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background-color: #0f2557;
+    width: 15.25em;
+    font-size: 1.2em;
+    box-shadow: 5px 10px 25px #0f2557;
+    border-radius: 10px;
+    padding: 25px;
+    margin: 25px;
+    transition: 0.7s;
+    color: white;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.icon {
+    color: white;
+    font-size: 8em;
+    text-align: center;
+}
+
+.info {
+    text-align: center;
+}
+
+.info h3 {
+    color: white;
+    font-weight: 700;
+    font-size: 1.2em;
+    margin: 10px;
+}
+
+.contact .icon {
+    font-size: 4.5em;
+}
+
+.contact .info h3 {
+    font-size: 0.8em;
+    color: white;
+}
+
+.contact .info p {
+    font-size: 0.9em;
+}
+
+.footer {
+    background-color: #0f2557;
+    color: whitesmoke;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.footer-title {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.footer-title span {
+    color: whitesmoke;
+}
+
+@media (max-width:1023px) {
+    header {
+        padding: 12px 62px;
+    }
+    .navigation a {
+        padding-left: 10px;
+    }
+    .title {
+        font: size 1.8em;
+    }
+    section {
+        padding: 80px 10px;
+    }
+    .main-content h2 {
+        font-size: 1em;
+    }
+    .main-content h3 {
+        font-size: 1.6em;
+    }
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width:641px) {
+    header {
+        padding: 12px 0px;
+        font-size: 10px;
+    }
+    #contact {
+        visibility: hidden;
+    }
+    .label {
+        visibility: visible;
+        margin-right: 20px;
+    }
+    body {
+        font-size: 12px;
+    }
+    .main-content h2 {
+        font-size: .8em;
+    }
+    .main-content h3 {
+        font-size: 1.4em;
+    }
+}
+
+@media (max-width:400px) {
+    body {
+        font-size: 10px;
+    }
+    header {
+        margin-left: 8px;
+    }
+    #contact {
+        visibility: hidden;
+    }
+    .label {
+        visibility: visible;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width:300px) {
+    body {
+        font-size: 10px;
+    }
+    header {
+        margin-left: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #contact {
+        visibility: hidden;
+    }
+    #projects {
+        visibility: hidden;
+    }
+    .label {
+        visibility: hidden;
+    }
+}
